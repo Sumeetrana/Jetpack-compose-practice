@@ -14,6 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.app.`2_FundamentalConcepts`.AccessImage
 import com.example.app.`2_FundamentalConcepts`.AccessStringResource
 import com.example.app.`2_FundamentalConcepts`.Greeting
+import com.example.app.`3_CoreComponent`.AnnotatedStringWithListener
+import com.example.app.`3_CoreComponent`.PartiallySelectableText
 import com.example.app.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +24,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-                AccessImage()
+                AnnotatedStringWithListener()
             }
         }
     }
