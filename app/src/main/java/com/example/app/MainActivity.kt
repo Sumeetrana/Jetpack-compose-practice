@@ -11,6 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.app.`2_FundamentalConcepts`.AccessImage
+import com.example.app.`2_FundamentalConcepts`.AccessStringResource
+import com.example.app.`2_FundamentalConcepts`.Greeting
 import com.example.app.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-
+                AccessImage()
             }
         }
     }
