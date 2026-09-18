@@ -15,6 +15,7 @@ import com.example.app.`2_FundamentalConcepts`.AccessImage
 import com.example.app.`2_FundamentalConcepts`.AccessStringResource
 import com.example.app.`2_FundamentalConcepts`.Greeting
 import com.example.app.`3_CoreComponent`.AnnotatedStringWithListener
+import com.example.app.`3_CoreComponent`.FilledButtonSample
 import com.example.app.`3_CoreComponent`.PartiallySelectableText
 import com.example.app.ui.theme.AppTheme
 
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-                AnnotatedStringWithListener()
+                FilledButtonSample()
             }
         }
     }
