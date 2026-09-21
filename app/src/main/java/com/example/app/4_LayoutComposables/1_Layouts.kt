@@ -2,9 +2,12 @@ package com.example.app.`4_LayoutComposables`
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,8 +35,33 @@ fun ColumnExample() {
     }
 }
 
+@Composable
+fun RowExample() {
+    Row(
+        Modifier.fillMaxSize()
+            .background(Color.Gray),
+        Arrangement.Center,
+        Alignment.CenterVertically
+    ) {
+        Text("text 1")
+        Text("text 2")
+        Text("text 3")
+        Text("text 4")
+        Text("text 5")
+    }
+}
+
+@Composable
+fun BoxExample() {
+    Box(Modifier.size(200.dp).background(Color.Red), Alignment.Center) {
+        Box(Modifier.size(150.dp).background(Color.Black)) {}
+    }
+}
+
+
+
 @Preview(showSystemUi = true)
 @Composable
 fun PreviewColumnExample() {
-    ColumnExample()
+    BoxExample()
 }
